@@ -23,7 +23,7 @@ Selain itu, kita juga bisa menggunakan nilai R-squared (R2). Nilai R-squared dig
 ## Data Understanding
   
 Dataset dapat diambil pada link: https://www.kaggle.com/datasets/adityadesai13/used-car-dataset-ford-and-mercedes?datasetId=750216&sortBy=voteCount
-![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Data%20understanding12.png)?raw=true)  
+![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Data%20understanding12.png?raw=true)  
 
 ## EDA Overview
 
