@@ -33,5 +33,44 @@ Terlihat dari grafik di atas, mobil bekas yang paling banyak terjual di Inggris 
 Berdasarkan grafik diatas, terlihat model **Ford Fiesta** menjadi model yang paling banyak terjual. Selain itu, hampir semua model yang paling banyak terjual masuk ke kategori mobil kecil dan juga city car, kecuali **Mercedes C-Class** yang termasuk ke dalam kategori mobil mewah.
 
 ## Modeling
+Kami melakukan modelling dengan algoritma Linear Regression, Decision Tree, Random Forest, dan XGBoost.  
+![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Model-model.png?raw=true)  
+Setelah dilihat, terlihat Random Forest merupakan algoritma dengan hasil terbaik.  
 
-![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Before%20improvement.png?raw=true)
+![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Before%20improvement.png?raw=true)  
+Selanjutnya, setelah dilakukan hyperparameter tuning, terlihat bahwa model setelah dituning menunjukkan hasil yang lebih baik.  
+
+### Model Improvement  
+Kami melakukan model improvement agar hasil prediksi model menjadi lebih baik.
+![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/After%20improvement.png?raw=true) 
+Setelah dilakukan modelling setelah improvement, terlihat performa model Random Forest membaik dari sisi MAPE maupun R-Squared.
+
+## Feature Importance
+![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Feature%20importance.png?raw=true) 
+Berdasarkan feature importance diatas setelah dilakukan improvement model, terdapat sedikit perbedaan dari feature importance sebelumnya dimana fitur yang paling berpengaruh kali ini terhadap harga adalah fitur enginesize (kapasitas mesin), mpg (miles per galon), year (tahun produksi mobil), transmisi kendaraan.  
+
+## Conclusion
+Berdasarkan hasil EDA, terlihat mobil bekas yang paling banyak terjual adalah mobil merk Ford. Hal ini disebabkan oleh harga mobil Ford yang cenderung terjangkau (carblog.co.uk, "Why Is Ford The Most Popular Car Make In The UK?". https://www.carblog.co.uk/why-is-ford-the-most-popular-car-make-in-the-uk/).
+
+Berdasarkan hasil EDA, terlihat banyak mobil jenis city car dan mobil- mobil kecil seperti Ford Fiesta dan VW Golf laku terjual di Inggris Raya. Hal ini mengindikasikan preferensi konsumen Inggris Raya terhadap mobil- mobil jenis tersebut.
+
+Berdasarkan hasil data feature importance setelah model improvement, maka fitur yang paling berpengaruh terhadap perbedaan harga jual mobil bekas di UK adalah fitur kapasitas mesin dari mobil itu sendiri. Kemudian disusul oleh efisiensi mobil yang ditunjukkan oleh satuan mile per gallon. Hal ini cukup beralasan karena semakin tinggi kapasitas mesin mobil artinya semakin besar pula tenaga mobil tersebut yang menyebabkan harga mobil semakin mahal. Sementara untuk fitur mpg, efisiensi mobil banyak mempengaruhi harga dan juga fitur lainnya, seperti mileage dan tax. Mobil yang efisien juga berpengaruh pada biaya yang harus dikeluarkan untuk bahan bakar.
+
+Dilihat dari hasil score metric yang digunakan pada model setelah improvement. Model Random Forest Regressor menghasilkan nilai skor MAPE sebesar 0.070287 atau 7% error rate. Berdasarkan Lewis (1982), nilai skor MAPE yang berada di bawah 10% dapat dikategorikan bahwa hasil prediksi nya "Sangat Baik". Sebagai contoh, jika data aktual harga mobil sebesar 100000, maka harga prediksi akan berada di rentang minimal -7% hingga +7% dari harga aktual, jika ternyata berada di luar rentang tersebut artinya terjadi bias pada hasil prediksi.
+
+Sementara untuk R-Squared, model menghasilkan skor sebesar 0.964239 atau 96%, yang artinya model dapat menjelaskan variabel dependent (price) sebesar 96%, sementara yang sisanya 4% dijelaskan oleh variabel lain diluar variabel independent atau secara sederhana dapat dikatakan bahwa fitur-fitur input yang digunakan cukup berpengaruh terhadap perubahan harga yang menjadi target prediksi. Berdasarkan Hair et al (2011) nilai skor R-Squared yang berada di atas 0.75 / 75% termasuk kategori "Kuat"
+
+## Recommendation / Next Suggestion
+Berikut adalah beberapa hal yang dapat dilakukan untuk pengembangan model dan bisnis agar bisa lebih baik lagi.
+
+Melihat kembali data predict, lalu menganalisa data-data yang memiliki error yang paling tinggi, dan membandingkan fitur-fitur mana saja yang menyebabkan model menghasilkan error tersebut.
+
+Jika memungkinkan, dilakukan penambahan fitur yang memiliki hubungan yang lebih korelatif dengan fitur harga. Untuk kasus ini, mungkin dapat ditambahkan fitur seperti kondisi fisik mobil, kelengkapan surat-surat, masa berlaku pajak, dll sehingga diharapkan dapat meningkatkan kemampuan model dalam memprediksi harga
+
+Menambah fitur kategori model mobil agar lebih detail. Contohnya BMW 2 Series, BMW 2 Series Tourer, dan BMW 2 Series Coupe.
+
+Melakukan data cleaning yang lebih mendalam pada fitur-fitur data yang masih bias pada dataset ini. Contohnya pada fitur fuelType masih terdapat tipe bahan bakar "other", hal ini sebaiknya diubah dan disesuaikan dengan jenis bahan bakar yang sebenarnya digunakan. Hal ini juga berlaku untuk fitur-fitur lainnya yang memiliki value yang berbeda dari yang data real sebenarnya. Dengan tujuan untuk mengurangi bias yang terjadi pada data-data tersebut. Karena data yang clean adalah kunci utama untuk bisa menghasilkan model yang terbaik
+
+Mencoba beberapa teknik feature engineering lainnya seperti binning pada data-data numerikal atau scaling menggunakan logaritmic scale pada data-data yang memiliki distribusi tidak normal.
+
+Dikarenakan tipe mobil yang banyak terjual adalah tipe city car yang praktis, maka PT ABC dapat menggencarkan promosi penjualan mobil- mobil sejenis dan juga memprioritaskan untuk membeli mobil bekas dari tipe- tipe tersebut.
