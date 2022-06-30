@@ -26,8 +26,11 @@ Selain itu, kita juga bisa menggunakan nilai R-squared (R2). Nilai R-squared dig
 
 ## EDA Overview
 
-![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Merk%20mobil.png?raw=true)  
-Terlihat dari grafik di atas, mobil bekas yang paling banyak terjual di Inggris adalah merk **Ford** diikuti oleh merk **VW**.
+![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Merk%20mobil.png?raw=true)    
+Terlihat dari grafik di atas, mobil bekas yang paling banyak terjual di Inggris adalah merk **Ford** diikuti oleh merk **VW**.  
+  
+    
+    
 
 ![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Model%20mobil.png?raw=true)  
 Berdasarkan grafik diatas, terlihat model **Ford Fiesta** menjadi model yang paling banyak terjual. Selain itu, hampir semua model yang paling banyak terjual masuk ke kategori mobil kecil dan juga city car, kecuali **Mercedes C-Class** yang termasuk ke dalam kategori mobil mewah.
@@ -35,14 +38,17 @@ Berdasarkan grafik diatas, terlihat model **Ford Fiesta** menjadi model yang pal
 ## Modeling
 Kami melakukan modelling dengan algoritma Linear Regression, Decision Tree, Random Forest, dan XGBoost.  
 ![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Model-model.png?raw=true)  
-Setelah dilihat, terlihat Random Forest merupakan algoritma dengan hasil terbaik.  
+Setelah dilihat, terlihat Random Forest merupakan algoritma dengan hasil terbaik.    
+  
+    
+    
 
 ![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Before%20improvement.png?raw=true)  
 Selanjutnya, setelah dilakukan hyperparameter tuning, terlihat bahwa model setelah dituning menunjukkan hasil yang lebih baik.  
 
 ### Model Improvement  
 Kami melakukan model improvement agar hasil prediksi model menjadi lebih baik.  
-![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/After%20improvement.png?raw=true) 
+![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/After%20improvement.png?raw=true)  
 Setelah dilakukan modelling setelah improvement, terlihat performa model Random Forest membaik dari sisi MAPE maupun R-Squared.
 
 ## Feature Importance
