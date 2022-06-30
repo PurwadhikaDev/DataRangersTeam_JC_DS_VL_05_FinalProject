@@ -41,7 +41,7 @@ Setelah dilihat, terlihat Random Forest merupakan algoritma dengan hasil terbaik
 Selanjutnya, setelah dilakukan hyperparameter tuning, terlihat bahwa model setelah dituning menunjukkan hasil yang lebih baik.  
 
 ### Model Improvement  
-Kami melakukan model improvement agar hasil prediksi model menjadi lebih baik.
+Kami melakukan model improvement agar hasil prediksi model menjadi lebih baik.  
 ![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/After%20improvement.png?raw=true) 
 Setelah dilakukan modelling setelah improvement, terlihat performa model Random Forest membaik dari sisi MAPE maupun R-Squared.
 
