@@ -1,20 +1,21 @@
 # Machine Learning Model for Predicting Used Car Price in UK
-![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/jpeg%20awal.jpg?raw=true)
-## CONTEXT
+![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/jpeg%20awal.jpg?raw=true)  
+## BUSINESS UNDERSTANDING
+### CONTEXT
 
 Di tengah menurunnya pasokan mobil baru di Inggris Raya dikarenakan minimnya pasokan semikonduktor, banyak pelanggan mobil yang mulai beralih ke mobil bekas. Hal ini ditunjukkan dari data Society of Motor Manufacturers and Traders (SMMT) pertumbuhan penjualan mobil baru yang hanya 1% pada tahun 2021 dibandingkan dengan mobil bekas yang sebesar 11.5% (SMMT. https://www.smmt.co.uk/category/vehicle-data/used-car-sales-data/).
 PT ABC adalah salah satu lembaga showroom mobil bekas yang berperan sebagai pihak yang membeli mobil bekas dari penjual mobil bekas, baik itu perorangan maupun lembaga dan menjual mobil bekas tersebut kepada calon pembeli. PT ABC akan melakukan penilaian harga mobil bekas yang akan dijual dan juga melakukan inspeksi dan kurasi untuk memeriksa keadaan mobil. PT ABC mengambil keuntungan 5% dari selisih harga beli dan harga jual mobil bekas.
 Di tengah aktivitas pasar mobil bekas yang terus meningkat, PT ABC ingin dapat mendapat gambaran harga pasar mobil bekas yang akurat. Tim Data Analyst Rangers PT ABC bertugas untuk memprediksi harga mobil bekas sesuai dengan kebutuhan PT ABC.
 
-## PROBLEM STATEMENT
+### PROBLEM STATEMENT
 
 Di tengah aktivitas pasar mobil bekas yang terus meningkat, kepercayaan konsumen menjadi sangat penting. Bila harga yang dinilai oleh PT ABC tidak akurat, maka konsumen mobil bekas akan beralih ke pesaing lainnya, sehingga PT ABC akan menderita kerugian.
 
-## GOALS
+### GOALS
 
 Berdasarkan permasalahan tersebut, perusahaan ingin menilai harga mobil bekas dengan sebaik mungkin agar kepercayaan konsumen meningkat dan akhirnya PT ABC menjadi top of mind tempat jual beli mobil bekas.
 
-## METRIC EVALUATION
+### METRIC EVALUATION
 
 Evaluasi metrik yang akan digunakan adalah MAPE, dimana MAPE adalah rataan persentase error yang dihasilkan oleh model regresi. Semakin kecil nilai MAPE yang dihasilkan, berarti model semakin akurat dalam memprediksi harga mobil bekas.
 
@@ -52,7 +53,9 @@ Kami melakukan model improvement agar hasil prediksi model menjadi lebih baik.
 ![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/After%20improvement.png?raw=true)  
 Setelah dilakukan modelling setelah improvement, terlihat performa model Random Forest membaik dari sisi MAPE maupun R-Squared.
 
-## FEATURE IMPORTANCE
+## EVALUATION
+
+### FEATURE IMPORTANCE
 ![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Feature%20importance.png?raw=true) 
 Berdasarkan feature importance diatas setelah dilakukan improvement model, terdapat sedikit perbedaan dari feature importance sebelumnya dimana fitur yang paling berpengaruh kali ini terhadap harga adalah fitur enginesize (kapasitas mesin), mpg (miles per galon), year (tahun produksi mobil), transmisi kendaraan.  
 
