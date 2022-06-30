@@ -21,8 +21,9 @@ Evaluasi metrik yang akan digunakan adalah MAPE, dimana MAPE adalah rataan perse
 Selain itu, kita juga bisa menggunakan nilai R-squared (R2). Nilai R-squared digunakan untuk mengetahui seberapa baik model dapat merepresentasikan varians keseluruhan data. Semakin mendekati 1, maka semakin fit pula modelnya terhadap data observasi.
 
 ## Data Understanding
-
-![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Data%20understanding.png?raw=true)
+  
+Dataset dapat diambil pada link: https://www.kaggle.com/datasets/adityadesai13/used-car-dataset-ford-and-mercedes?datasetId=750216&sortBy=voteCount
+![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Data%20understanding12.png)?raw=true)  
 
 ## EDA Overview
 
