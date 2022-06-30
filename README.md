@@ -20,12 +20,12 @@ Evaluasi metrik yang akan digunakan adalah MAPE, dimana MAPE adalah rataan perse
 
 Selain itu, kita juga bisa menggunakan nilai R-squared (R2). Nilai R-squared digunakan untuk mengetahui seberapa baik model dapat merepresentasikan varians keseluruhan data. Semakin mendekati 1, maka semakin fit pula modelnya terhadap data observasi.
 
-## Data Understanding
+## DATA UNDERSTANDING
   
 Dataset dapat diambil pada link: https://www.kaggle.com/datasets/adityadesai13/used-car-dataset-ford-and-mercedes?datasetId=750216&sortBy=voteCount
 ![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Data%20understanding12.png?raw=true)  
 
-## EDA Overview
+## EDA OVERVIEW
 
 ![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Merk%20mobil.png?raw=true)    
 Terlihat dari grafik di atas, mobil bekas yang paling banyak terjual di Inggris adalah merk **Ford** diikuti oleh merk **VW**.  
@@ -36,7 +36,7 @@ Terlihat dari grafik di atas, mobil bekas yang paling banyak terjual di Inggris 
 ![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Model%20mobil.png?raw=true)  
 Berdasarkan grafik diatas, terlihat model **Ford Fiesta** menjadi model yang paling banyak terjual. Selain itu, hampir semua model yang paling banyak terjual masuk ke kategori mobil kecil dan juga city car, kecuali **Mercedes C-Class** yang termasuk ke dalam kategori mobil mewah.
 
-## Modeling
+## MODELLING
 Kami melakukan modelling dengan algoritma Linear Regression, Decision Tree, Random Forest, dan XGBoost.  
 ![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Model-model.png?raw=true)  
 Setelah dilihat, terlihat Random Forest merupakan algoritma dengan hasil terbaik.    
@@ -47,16 +47,16 @@ Setelah dilihat, terlihat Random Forest merupakan algoritma dengan hasil terbaik
 ![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Before%20improvement.png?raw=true)  
 Selanjutnya, setelah dilakukan hyperparameter tuning, terlihat bahwa model setelah dituning menunjukkan hasil yang lebih baik.  
 
-### Model Improvement  
+### MODEL IMPROVEMENT 
 Kami melakukan model improvement agar hasil prediksi model menjadi lebih baik.  
 ![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/After%20improvement.png?raw=true)  
 Setelah dilakukan modelling setelah improvement, terlihat performa model Random Forest membaik dari sisi MAPE maupun R-Squared.
 
-## Feature Importance
+## FEATURE IMPORTANCE
 ![alt text](https://github.com/PurwadhikaDev/DataRangersTeam_JC_DS_VL_05_FinalProject/blob/main/Picture/Feature%20importance.png?raw=true) 
 Berdasarkan feature importance diatas setelah dilakukan improvement model, terdapat sedikit perbedaan dari feature importance sebelumnya dimana fitur yang paling berpengaruh kali ini terhadap harga adalah fitur enginesize (kapasitas mesin), mpg (miles per galon), year (tahun produksi mobil), transmisi kendaraan.  
 
-## Conclusion
+## CONCLUSION
 - Berdasarkan hasil EDA, terlihat mobil bekas yang paling banyak terjual adalah mobil merk Ford. Hal ini disebabkan oleh harga mobil Ford yang cenderung terjangkau (carblog.co.uk, "Why Is Ford The Most Popular Car Make In The UK?". https://www.carblog.co.uk/why-is-ford-the-most-popular-car-make-in-the-uk/).
 
 - Berdasarkan hasil EDA, terlihat banyak mobil jenis city car dan mobil- mobil kecil seperti Ford Fiesta dan VW Golf laku terjual di Inggris Raya. Hal ini mengindikasikan preferensi konsumen Inggris Raya terhadap mobil- mobil jenis tersebut.
@@ -67,7 +67,7 @@ Berdasarkan feature importance diatas setelah dilakukan improvement model, terda
 
 - Sementara untuk R-Squared, model menghasilkan skor sebesar 0.964239 atau 96%, yang artinya model dapat menjelaskan variabel dependent (price) sebesar 96%, sementara yang sisanya 4% dijelaskan oleh variabel lain diluar variabel independent atau secara sederhana dapat dikatakan bahwa fitur-fitur input yang digunakan cukup berpengaruh terhadap perubahan harga yang menjadi target prediksi. Berdasarkan Hair et al (2011) nilai skor R-Squared yang berada di atas 0.75 / 75% termasuk kategori "Kuat"
 
-## Recommendation / Next Suggestion
+## RECOMMENDATION / NEXT SUGGESTION
 Berikut adalah beberapa hal yang dapat dilakukan untuk pengembangan model dan bisnis agar bisa lebih baik lagi.
 
 - Melihat kembali data predict, lalu menganalisa data-data yang memiliki error yang paling tinggi, dan membandingkan fitur-fitur mana saja yang menyebabkan model menghasilkan error tersebut.
